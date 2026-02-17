@@ -149,11 +149,33 @@
         @media (max-width: 768px) {
             .card-inner {
                 grid-template-columns: minmax(0, 1fr);
-                padding: 22px 18px 20px;
+                padding: 20px 16px 18px;
             }
 
             h1 {
-                font-size: 1.55rem;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 8px 0;
+            }
+
+            .card-inner {
+                padding: 16px 12px 14px;
+                gap: 16px;
+            }
+
+            .intro,
+            .section-body,
+            .list {
+                font-size: 0.86rem;
+                line-height: 1.5;
+            }
+
+            h1 {
+                font-size: 1.35rem;
             }
         }
     </style>
